@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <style type="text/css">
+body {
+	Margin: 0!important;
+	padding: 15px;
+	background-color: #eee;
+}
+.wrapper {
+	width: 100%;
+	table-layout: fixed;
+}
+.wrapper-inner {
+	width: 100%;
+	max-width: 670px;
+	Margin: 0 auto;
+}
+table {
+	border-spacing: 0;
+	font-family: sans-serif;
+	color: #727f80;
+}
+td {
+    padding: 0;
+}
+.header {
+    background-color: #C2C1C1;
+    border-bottom: 3px solid #81B9C3;
+}
+p {
+    Margin:0;
+    text-align: center;
+    color: #4A4A4A;
+}
+.header p {
+    text-align: center;
+    padding: 1%;
+    font-weight: 500;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.button-holder-center {
+    text-align: center;
+    Margin: 5% 2% 3% 0;
+}
+.button-holder {
+    Margin: auto;
+    width: 100%;
+    padding: 25px 0;
+}
+/*--- End Outer Table 1 --*/
+.main-table-first {
+	width: 100%;
+	max-width: 670px;
+	Margin: 0 auto;
+	background-color: #293e50fa;
+}
+
+p.heading {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Nanum Gothic', sans-serif;
+    Margin: 5px;
+    color: white;
+    padding-left: 10px;
+}
+
+.white-hr {
+    display: none;
+}
+
+/*--- Start Two Column Sections --*/
+.two-column {
+    text-align: center;
+    font-size: 0;
+}
+.two-column .section {
+    width: 100%;
+    max-width: 270px;
+    display: inline-block;
+}
+.two-column .content {
+    font-size: 16px;
+    text-align: justify;
+}
+.content {
+    width: 100%;
+}
+.center {
+    display: table;
+    Margin: 0 auto;
+}
+
+img {
+    border: 0;
+}
+img.logo {
+    float: left;
+    Margin-left: 5%;
+    max-width: 200px!important;
+}
+#callout {
+    float: right;
+    Margin: 5% 5% 4% 0;
+    height: auto;
+    overflow: hidden;
+}
+#callout img {
+    max-width: 34px;
+}
+.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.social li {
+    display: inline-block;
+    padding-left: 10px;
+}
+.social li img {
+    max-width: 15px;
+    Margin-bottom: 0;
+    padding-bottom: 0;
+}
+/*--- Start Outer Table Banner Image, Text & Button --*/
+.image img {
+    width: 100%;
+    max-width: 670px;
+    height: auto;
+}
+.main-table {
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+.one-column .inner-td {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+}
+.inner-td {
+    padding: 10px;
+}
+
+.section-right {
+    float: right;
+}
+
+.section-left {
+    float: left;
+}
+.h2 {
+    text-align: left;
+    font-size: 40px;
+    padding-top: 15px;
+    line-height: 45px;
+    Margin: 15px 0;
+    max-width: 624px;
+    color: #4A4A4A;
+}
+p.center {
+    text-align: left;
+    max-width: 624px;
+    line-height: 24px;
+}
+
+.bulletPoint {
+    margin-left: 20px;
+}
+
+.liP {
+    padding-bottom: 10px;
+    margin-left: 20px;
+    text-align: left;
+}
+/*--- Start Two Column Image & Text Sections --*/
+.two-columnPrice .sectionPrice{
+    width: 100%;
+    max-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+.two-columnPrice {
+    text-align: center;
+}
+
+.right-pading {
+    padding-right: 6%;
+}
+
+.two-column {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+.two-column .text {
+    padding: 10px 0;
+}
+.blue {
+    background-color: #52c5f1;
+}
+.skyBlue {
+    background-color: #ccf1ffb5;
+}
+.grey {
+    background-color: #ebeef1;
+}
+.orange {
+    background-color: #ffc84c;
+}
+.light-orange {
+    background-color: #fbe39e4d;
+}
+.btn {
+    font-size: 15px;
+    color: #FFF;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 5px;
+}
+.btn-orange {
+    background-color: #ffc84c;
+}
+.btn-blue {
+    background-color: #52c5f1;
+}
+.price {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    padding-top: 20px;
+}
+
+.priceSmall {
+    text-align: center; 
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+
+.h3 {
+    padding-top: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.897);
+    font-size: 20px;
+    padding-bottom: 13px;
+}
+
+hr {
+    width: 200px;
+    display: block;
+    height: 0.7px;
+    border: 0;
+    margin: 0 auto 13px auto;
+    padding: 0; 
+}
+.blueHr {
+    border-top: 0.8px solid #55c5f1b5;
+}
+.orangeHr{
+    border-top: 0.8px solid #ffc84cbf;
+}
+.listItem {
+    padding-bottom: 13px;
+    color: #4a4a4ae0;
+}
+
+/*--- Start Bottom One Column Section --*/
+.contact-table {
+    background-color: #f9f9f9;
+    width: 100%;
+}
+.contact-p {
+    padding-top: 30px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+.button-holder-green{
+    Margin: auto;
+    width: 100%;
+    padding: 30px 0 50px 0;
+}
+.btn-green {
+    padding: 12px 46px;
+    background-color: #8bc335;
+}
+.one-column-contact {
+    text-align: center;
+}
+/*--- Start Footer Section --*/
+.outer-table-3 {
+    width: 100%;
+}
+.footer {
+	width: 100%;
+	background-color: #2e4254;
+	Margin: 0 auto;
+}
+p.footer {
+	text-align: center;
+	color: white;
+	padding: 3% 0;
+}
+/*--- Media Queries --*/
+@media screen and (max-width: 400px) {
+	.h1 {
+		font-size: 22px;
+	}
+	.two-column .column, .three-column .column {
+		max-width: 100%!important;
+	}
+	.two-column img {
+		width: 100%!important;
+	}
+	.three-column img {
+		max-width: 60%!important;
+	}
+}
+@media screen and (min-width: 401px) and (max-width: 400px) {
+
+	.two-column .column {
+		max-width: 50%!important;
+	}
+	.three-column .column {
+		max-width: 33%!important;
+}
+}
+@media screen and (max-width:599px) {
+#callout {
+	float:none !important;
+	margin: 0% 0% 0% 0;
+	height: auto;
+	text-align:center;
+	overflow: hidden;
+}
+#callout img {
+    max-width:26px !important; 
+}
+p.heading {
+    text-align: center;
+    padding-left: 0;
+    font-size: 36px;
+    margin: 0;
+}
+
+p {
+    font-size: 15px;
+}
+
+p.h2 {
+    font-size: 25px;
+    padding-top: 0;
+    line-height: 30px;
+}
+
+p.footer {
+    font-size: 12px;
+}
+
+p.contact-p {
+    display: none;
+} 
+
+.social li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bulletPoint {
+
+    padding: 20px 0 10px 0;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+}
+
+.liP {
+    margin-left: 2px;
+    /* text-align: center; */
+}
+.white-hr {
+    display: block;
+    border-top: 2px solid white;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.right-pading {
+    padding-right: 0;
+}
+
+.two-columnPrice .sectionPrice {
+    display: block;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.two-column .section {
+	width: 100% !important;
+	max-width: 100% !important;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.two-column img {
+	width: 100% !important;
+ 	height: auto !important;
+}
+img.img-responsive {
+    width:100% !important;
+    height:auto !important;
+    max-width:100% !important;
+}
+.content {
+	width: 100%;
+	padding-top:0px !important;
+}
+.button-holder-green{
+    width: 100%;
+    background-color:#8bc335;
+    padding: 10px 0;
+}
+.btn-green{
+    background-color: unset;
+}
+}
+</style>
+ </head>
+<body>
+    <div class="wrapper">
+    	<div class="wrapper-inner">
+            <table class="main-table-first" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td class="two-column">
+                        <div class="section section-left">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <p class="heading">Company A</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!--- End First Column of Two Columns -->
+                        <hr class="white-hr" />
+                        <div class="section section-right">
+                            <table width="100%">
+                                <tr>
+                                    <td class="inner-td">
+                                        <table class="content">
+                                            <tr>
+                                                <td>
+                                                    <div id="callout">
+                                                        <ul class="social">
+                                                            <li><a href="index.html#" target="_blank"><img src="https://image.ibb.co/dYJMR8/googleplus.png"></a></li>
+                                                            <li><a href="index.html#" target="_blank"><img src="https://image.ibb.co/cO5PeT/facebook.png"></a></li>
+                                                            <li><a href="index.html#" target="_blank"><img src="https://image.ibb.co/ksET68/twitter.png"></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> <!--- End Second Column of Two Columns -->
+                    </td>
+                </tr> <!--- End Two Column Section -->
+                </table> <!--- End Main Table -->
+            <table class="main-table">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%">
+    						<tr>
+    							<td class="inner-td">
+    								<p class="h2">Heading 1</p>
+    								<p class="center">This week we'll learn how to use HTML and CSS to create really awesome newsletters for our websites! We're going to use HTML tables in order to give the email layouts it's responsiveness and mobile-friendly version as well as have cross-email-client compatilibility.</p>
+                                    <ul class="bulletPoint">
+                                        <li><p class="liP">Super Interesting Bullet Point</p></li>
+                                        <li><p class="liP">Super Interesting Bullet Point</p></li>
+                                        <li><p class="liP">Super Interesting Bullet Point</p></li>
+                                    </ul>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr> <!--- End Heading, Paragraph & Button Section -->
+    			<tr>
+    				<td class="two-columnPrice">
+    					<div class="sectionPrice right-pading">
+    						<table width="100%">
+    							<tr>
+    								<td>
+    									<table class="content" cellpadding="0" cellspacing="0">
+                                            <tr class="blue">
+                                                <td>
+                                                    <p class="price">$299</p>
+                                                    <p class="priceSmall">per mounth</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="skyBlue">
+                                                <td class="text">
+                                                    <p class="h3">Basic</p>
+                                                    <p class="listItem">Lots of clients & users</p>
+                                                    <hr class="blueHr"//>
+                                                    <p class="listItem">250 SKU's</p>
+                                                    <p class="listItem">1 GB Storage</p>
+                                                    <p class="listItem">3.5% transaction fee</p>
+                                                </td>
+                                            </tr>
+                                            <tr class="grey">
+                                                <td>
+                                                    <div class="button-holder">
+                                                            <a class="btn btn-blue" href="#">Try a Week</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End First Column of Two Columns -->
+    					<div class="sectionPrice">
+    						<table width="100%">
+    							<tr>
+    								<td>
+    									<table class="content" cellpadding="0" cellspacing="0">
+    										<tr class="orange">
+    											<td>
+                                                    <p class="price">$499</p>
+                                                    <p class="priceSmall">per mounth</p>
+    											</td>
+    										</tr>
+    										<tr class="light-orange">
+    											<td class="text">
+                                                    <p class="h3">Unlimited</p>
+                                                    <p class="listItem">Lots of clients & users</p>
+                                                    <hr class="orangeHr"/>
+                                                    <p class="listItem">Unlimited SKU's</p>
+                                                    <p class="listItem">20 GB Storage</p>
+                                                    <p class="listItem">3.5% transaction fee</p>
+    											</td>
+                                            </tr>
+                                            <tr class="grey">
+                                                <td>
+                                                    <div class="button-holder">
+                                                            <a class="btn btn-orange" href="#">Try a Week</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+    									</table>
+    								</td>
+    							</tr>
+    						</table>
+    					</div> <!--- End Second Column of Two Columns -->
+    				</td>
+    			</tr> <!--- End Two Column Section -->
+            </table> <!--- End Main Table -->
+            <table class="contact-table" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td class="one-column-contact">
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="contact">
+                                        <p class="contact-p">Want to learn more? Contact Us Today!</p>
+                                        <div class="button-holder-green">
+                                                <a class="btn btn-green" href="#">Contact Us</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table> <!--- End Main Table -->
+            <table class="outer-table-3" cellpadding="0" cellspacing="0">
+    			<tr>
+    				<td class="one-column">
+    					<table width="100%" cellpadding="0" cellspacing="0">
+    						<tr>
+    							<td class="footer">
+                                    <p class="footer">
+                                        <a href="index.html#">CompanyA.com</a> | 
+                                        <a href="index.html#">Privacy Policy</a> | 
+                                        <a href="index.html#">Unsubscribe</a>
+                                    </p>
+    							</td>
+    						</tr>
+    					</table>
+    				</td>
+    			</tr>
+    		</table> <!--- End Main Table -->
+    	</div> <!--- End Wrapper Inner -->
+    </div> <!--- End Wrapper -->
+    <br>
+</body>
+</html>
